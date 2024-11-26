@@ -1,0 +1,27 @@
+# Interface Gráfica
+ttkbootstrap==1.10.1
+
+# Análise de Dados
+pandas==2.1.3
+numpy==1.26.2
+scikit-learn==1.3.2
+
+# Visualização
+matplotlib==3.8.2
+seaborn==0.13.0
+
+# Banco de Dados
+oracledb==2.5.0
+
+# Relatórios
+fpdf==1.7.2
+
+# Utilitários
+python-dotenv==1.0.0
+typing-extensions==4.8.0
+
+# Desenvolvimento
+black==23.11.0
+pylint==3.0.2
+pytest==7.4.3
+pytest-cov==4.1.0

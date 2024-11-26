@@ -1,0 +1,324 @@
+{
+    "version": 1,
+    "author": "Gab Mule",
+    "editor": "wokwi",
+    "parts": [
+        {
+            "type": "board-esp32-devkit-c-v4",
+            "id": "esp",
+            "top": 0,
+            "left": -4.76,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-dht22",
+            "id": "dht1",
+            "top": -162.9,
+            "left": 23.4,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-pir-motion-sensor",
+            "id": "pir1",
+            "top": -120.8,
+            "left": 146.22,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-photoresistor-sensor",
+            "id": "ldr1",
+            "top": 3.2,
+            "left": -287.2,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-hc-sr04",
+            "id": "ultrasonic1",
+            "top": 270.3,
+            "left": -32.9,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-buzzer",
+            "id": "bz1",
+            "top": -120.8,
+            "left": 250,
+            "attrs": {
+                "volume": "0.1"
+            }
+        },
+        {
+            "type": "wokwi-relay",
+            "id": "relay1",
+            "top": 3.2,
+            "left": 250,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-lcd1602",
+            "id": "lcd1",
+            "top": 188.8,
+            "left": 236,
+            "attrs": {
+                "pins": "i2c"
+            }
+        }
+    ],
+    "connections": [
+        [
+            "esp:TX",
+            "$serialMonitor:RX",
+            "",
+            []
+        ],
+        [
+            "esp:RX",
+            "$serialMonitor:TX",
+            "",
+            []
+        ],
+        [
+            "esp:3V3",
+            "dht1:VCC",
+            "red",
+            [
+                "h-14.21",
+                "v-76.8"
+            ]
+        ],
+        [
+            "esp:GND",
+            "dht1:GND",
+            "black",
+            [
+                "h-33.41",
+                "v-153.6"
+            ]
+        ],
+        [
+            "esp:5V",
+            "ultrasonic1:VCC",
+            "red",
+            [
+                "h-52.61",
+                "v163.2"
+            ]
+        ],
+        [
+            "esp:GND",
+            "ultrasonic1:GND",
+            "black",
+            [
+                "h-43.21",
+                "v259.2"
+            ]
+        ],
+        [
+            "esp:5",
+            "ultrasonic1:TRIG",
+            "yellow",
+            [
+                "h62.44",
+                "v259.2",
+                "h-114.8"
+            ]
+        ],
+        [
+            "esp:18",
+            "ultrasonic1:ECHO",
+            "orange",
+            [
+                "h72.04",
+                "v278.4",
+                "h-114.4"
+            ]
+        ],
+        [
+            "esp:5V",
+            "pir1:VCC",
+            "red",
+            [
+                "h-23.81",
+                "v-211.2",
+                "h201.6"
+            ]
+        ],
+        [
+            "esp:GND",
+            "pir1:GND",
+            "black",
+            [
+                "h-14.21",
+                "v-115.2",
+                "h192"
+            ]
+        ],
+        [
+            "esp:19",
+            "pir1:OUT",
+            "blue",
+            [
+                "h96",
+                "v-124.8"
+            ]
+        ],
+        [
+            "esp:3V3",
+            "ldr1:VCC",
+            "red",
+            [
+                "h-76.65",
+                "v-9.6"
+            ]
+        ],
+        [
+            "esp:34",
+            "ldr1:OUT",
+            "purple",
+            [
+                "h-272.04",
+                "v0"
+            ]
+        ],
+        [
+            "dht1:GND",
+            "esp:GND.2",
+            "black",
+            [
+                "v19.2",
+                "h38.4",
+                "v57.6"
+            ]
+        ],
+        [
+            "pir1:GND",
+            "esp:GND.2",
+            "black",
+            [
+                "v57.6",
+                "h-9.86"
+            ]
+        ],
+        [
+            "ultrasonic1:GND",
+            "esp:GND.1",
+            "black",
+            [
+                "h75.6",
+                "v-105.6",
+                "h-172.8",
+                "v-105.6"
+            ]
+        ],
+        [
+            "ldr1:GND",
+            "esp:GND.1",
+            "black",
+            [
+                "h28.8",
+                "v9.2",
+                "h57.6",
+                "v115.2"
+            ]
+        ],
+        [
+            "dht1:SDA",
+            "esp:22",
+            "green",
+            [
+                "v28.8",
+                "h67.3",
+                "v67.2"
+            ]
+        ],
+        [
+            "esp:25",
+            "bz1:+",
+            "red",
+            []
+        ],
+        [
+            "bz1:-",
+            "esp:GND.1",
+            "black",
+            []
+        ],
+        [
+            "esp:26",
+            "relay1:IN",
+            "yellow",
+            []
+        ],
+        [
+            "relay1:GND",
+            "esp:GND.1",
+            "black",
+            []
+        ],
+        [
+            "relay1:VCC",
+            "esp:5V",
+            "red",
+            []
+        ],
+        [
+            "lcd1:GND",
+            "esp:GND.1",
+            "black",
+            [
+                "h-259.2",
+                "v-67.2"
+            ]
+        ],
+        [
+            "lcd1:VCC",
+            "esp:5V",
+            "red",
+            []
+        ],
+        [
+            "lcd1:SDA",
+            "esp:21",
+            "blue",
+            [
+                "h-105.6",
+                "v-163"
+            ]
+        ],
+        [
+            "lcd1:SCL",
+            "esp:23",
+            "yellow",
+            [
+                "h-96",
+                "v-210.9"
+            ]
+        ],
+        [
+            "bz1:2",
+            "esp:4",
+            "red",
+            [
+                "v0"
+            ]
+        ],
+        [
+            "bz1:1",
+            "esp:GND.2",
+            "black",
+            [
+                "v0"
+            ]
+        ],
+        [
+            "ldr1:AO",
+            "esp:34",
+            "green",
+            [
+                "h76.8",
+                "v18.5"
+            ]
+        ]
+    ],
+    "dependencies": {}
+}

@@ -1,0 +1,18 @@
+categoria,observacao
+Geral,Total de registros válidos: 908.528
+Unidades,Análises separadas por R$/kW (demanda) e R$/MWh (consumo)
+Componentes KW,"Principal componente: Tarifa de Uso do Sistema de Distribuição - 10,99 R$/kW"
+Componentes MWH,"Principal componente: Tarifa de Energia - 98,83 R$/MWh"
+Período,03/02/2012 a 13/12/2013
+Principais KW,"Tarifa de Uso do Sistema de Distribuição, TUSD - Custos de Distribuição, TUSD - Rede Básica"
+Principais MWH,"Tarifa de Energia, TE - Custo de Geração, TUSD - Custos de Distribuição"
+Zeros KW,317.745 valores zero
+Zeros MWH,394.324 valores zero
+Fontes Renováveis,"Componentes PROINFA e CDE indicam incentivos crescentes para fontes renováveis, com foco em geração distribuída"
+Impacto Social,"Consumidores de baixa tensão (subgrupo B) apresentam maior impacto tarifário relativo, especialmente em áreas rurais"
+Desenvolvimento,"Disparidades regionais significativas nas tarifas, indicando necessidade de políticas específicas"
+Oportunidades,"Potencial para expansão de geração distribuída, eficiência energética e smart grids"
+Recomendações,"1. Implementar programas de eficiência energética focados em consumidores de baixa tensão;
+2. Expandir incentivos para geração distribuída em áreas com maiores tarifas;
+3. Desenvolver políticas específicas para redução de disparidades regionais;
+4. Investir em tecnologias smart grid para otimização do consumo"
